@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +19,48 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header class="cabecalho">
+    <div class="container">
+        <img class="cabecalho-imagem" src="Menu.svg" alt="Menu">
+        <img class="cabecalho-imagem" src="Logo.svg" alt="Logo">
+    </div>
 
-        <div class="container">
-            <img class="cabecalho-imagem" src="Menu.svg" alt="Menu">
-            <img class="cabecalho-imagem" src="Logo.svg" alt="Logo">
-        </div>
-
-        <div class="container">
+    <div class="container">
         <img class="cabecalho-imagem" src="Favoritos.svg" alt="Livros favoritos">
         <img class="cabecalho-imagem" src="Sacola.png" alt="Compras">
         <img class="cabecalho-imagem" src="Usuario.png" alt="Perfil">
-        </div>
+    </div>
+
     </header>
     <section class="banner">
+
         <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
-
-
-
+    <section class="carrossel">
+        <h2 class="titulo_carrossel" > ULTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
